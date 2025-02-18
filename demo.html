@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player</title>
+    <title>Demo Lecture</title>
     <style>
         body {
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -74,27 +74,29 @@
             0% { opacity: 0; transform: translateY(20px); }
             100% { opacity: 1; transform: translateY(0); }
         }
+    .iframe-video {
+            width: 100%;
+            height: 450px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Demo Session</h1>
+        <h1>Demo Lecture</h1>
     </header>
-    
+    <!-- <h1>Video Player</h1> -->
     <div class="video-player">
-        <video controls>
-            <source src="demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <iframe src="https://drive.google.com/file/d/1eZpWBByuMz4dZkZ_teqbu5Pm_MN3qIpL/preview" frameborder="0" allowfullscreen class="iframe-video"></iframe>
     </div>
-    <p class="animated-text">Experience the demo video with our smooth and responsive player. Enjoy seamless playback and stunning visuals!</p>
+    <p class="animated-text">Experience the the Demo Lecture with our smooth and responsive player. Enjoy seamless playback and stunning visuals!</p>
     
-        <div class="video-item" onclick="changeVideo('demo.mp4')"></div>
+        <div class="video-item" onclick="changeVideo('https://drive.google.com/file/d/1eZpWBByuMz4dZkZ_teqbu5Pm_MN3qIpL/preview')"></div>
     </div>
     <script>
             </script>
     <footer>
-        <p>&copy; 2025 SMC Trading Guru. All Rights Reserved.</p>
+        <p>&copy; 2025 Trading Guru. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
